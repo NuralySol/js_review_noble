@@ -360,3 +360,25 @@ console.log("meatPriceyEntrees: ", meatPricyEntrees);
 const meat1000Cal = entrees.filter(item => !item.vegetarian && item.cals <= 1000);
 console.log("Meats less than 1000 calories: ", meat1000Cal);
 
+//* use filter to find the veggies that only start with c:
+const cStringVeggies = veggies.filter(item => item.toLowerCase().startsWith("c"));
+console.log("Get only S-string veggies: ", cStringVeggies);
+
+//* Make an array of juices with map: concat the fruits array to make the juices with array:
+const juiceArr = fruits.map(item => `${item} juice`);
+console.log("JuiceArr: ", juiceArr);
+
+//* Method chaining to get the banana juice in array:
+const bananaJuice = fruits.filter(item => item.includes("banana")).map(item => `${item} juice`)[0];
+console.log("Get the string of Banana Juice: ", bananaJuice);
+console.log(typeof (bananaJuice));
+
+const crunchyVeggies = veggies.filter(item => item.startsWith("c")).map(item => `crunchy ${item}`);
+console.log("Crunchy veggies: ", crunchyVeggies);
+console.log(typeof (cStringVeggies)); //* an object:
+
+const mixedBag = [3, "5", "apple", "13", "banAnanA", 6];
+
+//! chaining the mixed + makes it a number data type:
+const numsSquared = mixedBag.filter(item => +(item = !isNaN(item))).sort((a, b) => a - b ).map(num => num * num);
+console.log("Nums squared and sorted: ", numsSquared);
