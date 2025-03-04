@@ -26,4 +26,8 @@ const interval = setInterval(() => {
     }
 }, 1000); // adding an interal of 1 second and loops through an array of fruits:
 
-//! 
+//* an emtpy array to hold the smoothies array:
+
+
+
+
