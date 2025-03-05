@@ -642,7 +642,6 @@ console.log(addOne(test1)); // Output: [1, 0, 0, 0]
 console.log(addOne(test2)); // Output: [1, 2, 4]
 console.log(addOne(test3)); // Output: [4, 6, 0]
 
-
 //! Given an integer array arr[] and an integer ele the task is to the remove all occurrences of ele from arr[] in-place and return the number of elements which are not equal to ele. If there are k number of elements which are not equal to ele then the input array arr[] should be modified such that the first k elements should contain the elements which are not equal to ele and then the remaining elements.
 
 // Note: The order of first k elements may be changed.
@@ -669,3 +668,5 @@ element = 2;
 // log the function to test it: 
 const removeTwoS = removeElement(arr, element);
 console.log("Remove Two's from the array: ", removeTwoS); // Outpute is 5:
+
+//! Asynchronius programming paradigm:
